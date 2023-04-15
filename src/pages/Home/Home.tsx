@@ -3,6 +3,7 @@ import css from "./Home.module.css";
 import axios from "axios";
 import classNames from "classnames";
 import Loader from "../../components/loader/Loader";
+import IonIcon from "@reacticons/ionicons";
 
 function Home() {
     const [amount, setAmount] = useState<number>();
@@ -67,7 +68,7 @@ function Home() {
             <header>
                 <h1>Przelicznik walut</h1>
                 <p className="text-center">
-                    {/*<ion-icon className="header-icon" name="cash-outline"></ion-icon>*/}
+                    <IonIcon className="header-icon" name="cash-outline"></IonIcon>
                 </p>
 
             </header>
