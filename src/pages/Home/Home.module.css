@@ -1,0 +1,16 @@
+.error {
+    color: red;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border-radius: 9px;
+    padding: 2.4rem;
+    font-size: 4.8rem;
+    font-family: inherit;
+}
