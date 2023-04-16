@@ -1,0 +1,25 @@
+.container:hover {
+    transform: scale(1.2);
+    transition: all 0.7s;
+}
+
+.container:not(:hover) {
+    transition: all 0.7s;
+}
+
+.input {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
