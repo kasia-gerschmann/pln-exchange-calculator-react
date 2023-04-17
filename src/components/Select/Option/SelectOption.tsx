@@ -1,15 +1,11 @@
-import React, {OptionHTMLAttributes, ReactNode} from "react";
+import React, { OptionHTMLAttributes, ReactNode } from "react";
 
 interface Props extends OptionHTMLAttributes<HTMLOptionElement> {
-    children: ReactNode;
+  children: ReactNode;
 }
 
-function SelectOption({children, ...props}: Props) {
-    return (
-        <option {...props}>
-            {children}
-        </option>
-    )
+function SelectOption({ children, ...props }: Props) {
+  return <option {...props}>{children}</option>;
 }
 
 export default SelectOption;
