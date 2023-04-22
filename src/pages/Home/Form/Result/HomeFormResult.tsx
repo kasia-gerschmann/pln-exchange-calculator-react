@@ -1,9 +1,8 @@
-import React from "react";
 import css from "./HomeFormResult.module.css";
 import Loader from "../../../../components/Loader/Loader";
 
 interface Props {
-  result: string | undefined;
+  result?: string;
   loading: boolean;
 }
 

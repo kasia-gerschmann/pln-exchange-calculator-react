@@ -1,8 +1,8 @@
-import React, { ReactNode, SelectHTMLAttributes } from "react";
+import { ReactNode, SelectHTMLAttributes } from "react";
 import css from "./Select.module.css";
 
 interface Props extends SelectHTMLAttributes<HTMLSelectElement> {
-  label: any;
+  label: ReactNode;
   children: ReactNode;
 }
 

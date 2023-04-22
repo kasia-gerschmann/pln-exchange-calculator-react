@@ -1,10 +1,10 @@
-import React, { InputHTMLAttributes } from "react";
+import {InputHTMLAttributes, ReactNode} from "react";
 import css from "./Input.module.css";
 import InputError from "./error/InputError";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
-  label: any;
-  error: string | undefined;
+  label: ReactNode;
+  error?: string;
 }
 
 function Input({ label, error, ...props }: Props) {

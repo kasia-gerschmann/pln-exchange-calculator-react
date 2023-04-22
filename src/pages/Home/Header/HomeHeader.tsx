@@ -1,5 +1,4 @@
 import IonIcon from "@reacticons/ionicons";
-import React from "react";
 import Header from "../../../components/Header/Header";
 import css from "./HomeHeader.module.css";
 

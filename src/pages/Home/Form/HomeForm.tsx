@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import Button from "../../../components/Button/Button";
 import Select from "../../../components/Select/Select";
 import Input from "../../../components/Input/Input";

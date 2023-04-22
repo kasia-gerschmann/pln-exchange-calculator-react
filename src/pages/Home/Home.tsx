@@ -1,4 +1,3 @@
-import React from "react";
 import HomeHeader from "./Header/HomeHeader";
 import HomeForm from "./Form/HomeForm";
 import Container from "../../components/Container/Container";

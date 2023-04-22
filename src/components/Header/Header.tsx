@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import css from "./Header.module.css";
 
 interface Props {

@@ -1,9 +1,8 @@
-import React from "react";
 import css from "./InputError.module.css";
 import classNames from "classnames";
 
 interface Props {
-  error: string | undefined;
+  error?: string;
 }
 
 function InputError({ error }: Props) {

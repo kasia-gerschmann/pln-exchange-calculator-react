@@ -1,4 +1,4 @@
-import React, { OptionHTMLAttributes, ReactNode } from "react";
+import { OptionHTMLAttributes, ReactNode } from "react";
 
 interface Props extends OptionHTMLAttributes<HTMLOptionElement> {
   children: ReactNode;
