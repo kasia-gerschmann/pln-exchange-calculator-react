@@ -28,7 +28,7 @@ function HomeForm() {
       );
       setResult(`${formattedLocalAmount} = ${formattedForeignAmount}`);
     } catch (err) {
-      alert("Spróbuj później");
+      alert("Try again later");
     } finally {
       setLoading(false);
     }
@@ -41,11 +41,11 @@ function HomeForm() {
 
     let errorText = ``;
     if (!amountText || amount === 0) {
-      errorText += `Kwota nie może być pusta!`;
+      errorText += `The amount cannot be empty!`;
     }
 
     if (amount < 0) {
-      errorText += `Kwota nie może być ujemna!`;
+      errorText += `The amount cannot be negative!`;
     }
 
     setError(errorText);
@@ -67,7 +67,7 @@ function HomeForm() {
           <Input
             onChange={onAmountChange}
             value={amount || ""}
-            label="Wprowadź kwotę (PLN)"
+            label="Amount to exchange (PLN)"
             placeholder="PLN"
             type="number"
             name="amount"
@@ -80,7 +80,7 @@ function HomeForm() {
             name="currency"
             value={currency}
             onChange={onCurrencyChange}
-            label="Wybierz walutę"
+            label="Select currency"
             required
           >
             {CURRENCIES.map((currency) => (
@@ -92,7 +92,7 @@ function HomeForm() {
             disabled={error === undefined || !!error}
             type="button"
           >
-            Przelicz
+            Calculate
           </Button>
         </form>
       </Container>
